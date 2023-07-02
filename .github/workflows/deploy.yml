@@ -10,10 +10,10 @@ jobs:
 
     steps:
       - name: Checkout the current branch
-        uses: https://github.com/actions/checkout@v3
+        uses: actions/checkout@v3
 
       - name: rsync copy
-        uses: https://github.com/burnett01/rsync-deployments@4.0
+        uses: burnett01/rsync-deployments@4.0
         with:
           switches: -avh --delete --exclude="" --include="" --filter=""
           path: src/
