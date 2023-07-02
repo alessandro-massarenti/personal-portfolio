@@ -1,0 +1,24 @@
+name: CDeployment
+run-name: Website-deploy
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    environment: deploy
+
+    steps:
+      - name: Checkout the current branch
+        uses: https://github.com/actions/checkout@v3
+
+      - name: rsync copy
+        uses: https://github.com/burnett01/rsync-deployments@4.0
+        with:
+          switches: -avh --delete --exclude="" --include="" --filter=""
+          path: src/
+          remote_path: /root/html/
+          remote_host: ${{ secrets.DEPLOY_SERVER }}
+          remote_user: ${{ secrets.DEPLOY_USERNAME }}
+          remote_key: ${{ secrets.SSH_PRIVATE_KEY }}
+          remote_port: 9000
