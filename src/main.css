@@ -119,3 +119,7 @@ footer ul#socials li a:visited{
 footer ul#socials li{
     margin: 0 1rem;
 }
+
+.underlined{
+    border-bottom: solid 2px #3d827f;
+}
