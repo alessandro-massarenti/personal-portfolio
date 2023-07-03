@@ -34,19 +34,26 @@ p{
     margin: 1rem 0;
 }
 
-a{
-    text-decoration: none;
+p span{
+    font-weight: bold;
     color: #3d827f;
+}
+
+a{
+    color: #3d827f;
+    text-decoration-color: #000;
+    text-underline-offset: 2px;
+    border-radius: 4px;
 }
 
 a:hover, a:focus{
     color: #fff;
     background-color: #3d827f;
+    text-decoration-color: #fff;
 }
 
 a:visited{
-    color: #000;
-    border: 1px solid #000;
+    text-decoration-color: black;
 }
 
 header h1{
@@ -127,3 +134,5 @@ footer ul#socials li a:visited{
 footer ul#socials li{
     margin: 0 1rem;
 }
+
+
