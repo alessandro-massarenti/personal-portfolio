@@ -49,6 +49,14 @@ a:visited{
     border: 1px solid #000;
 }
 
+header h1{
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: #3d827f;
+    text-decoration-thickness: 10px;
+    text-underline-offset: 5px;
+}
+
 main{
     padding: 2rem;
 }
@@ -118,8 +126,4 @@ footer ul#socials li a:visited{
 
 footer ul#socials li{
     margin: 0 1rem;
-}
-
-.underlined{
-    border-bottom: solid 2px #3d827f;
 }
