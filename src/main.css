@@ -57,11 +57,7 @@ a:visited{
 }
 
 header h1{
-    text-decoration: underline;
-    text-decoration-style: dotted;
-    text-decoration-color: #3d827f;
-    text-decoration-thickness: 10px;
-    text-underline-offset: 5px;
+    border-bottom: dotted 5px #3d827f;
 }
 
 main{
