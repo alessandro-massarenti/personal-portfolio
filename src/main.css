@@ -55,8 +55,6 @@ a:hover, a:focus{
     text-decoration-color: #fff;
 }
 
-
-
 header h1{
     border-bottom: dotted 5px #3d827f;
 }
@@ -116,17 +114,16 @@ ul#socials li a{
     border-radius: 5px;
 }
 
+ul#socials li a:visited{
+    border: 10px solid #000;
+}
+
 ul#socials li a:hover,
 ul#socials li a:focus {
     color: #fff;
     background-color: #3d827f;
 }
-ul#socials li a:visited{
-    border: 10px solid #000;
-}
 
 ul#socials li{
     margin: 0 1rem;
 }
-
-
