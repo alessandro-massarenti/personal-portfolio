@@ -1,6 +1,11 @@
 name: CDeployment
 run-name: Website-deploy
-on: [push]
+on:
+  push:
+    branches:
+      - 'main'
+    paths:
+      - 'src/**'
 
 jobs:
   build:
