@@ -41,9 +41,12 @@ p span{
 
 a{
     color: #3d827f;
-    text-decoration-color: #000;
+    text-decoration-color: #3d827f;
     text-underline-offset: 2px;
     border-radius: 4px;
+}
+a:visited{
+    color: black;
 }
 
 a:hover, a:focus{
@@ -52,9 +55,7 @@ a:hover, a:focus{
     text-decoration-color: #fff;
 }
 
-a:visited{
-    text-decoration-color: black;
-}
+
 
 header h1{
     border-bottom: dotted 5px #3d827f;
@@ -74,7 +75,7 @@ main .video-container {
     position: relative;
     width: 100%;
     height: 0;
-    padding-bottom: 56.25%; /* YouTube aspect ratio: 16:9 (9 divided by 16 gives 0.5625 or 56.25%) */
+    padding-bottom: 56.25%;
 }
 
 main .video-container iframe {
@@ -85,7 +86,6 @@ main .video-container iframe {
     height: 100%;
 }
 
-/*small line over footer*/
 footer{
     width: 100%;
     height: 1px;
@@ -100,34 +100,32 @@ footer h2{
     font-style: italic;
 }
 
-footer ul#socials{
+ul#socials{
     display: flex;
     justify-content: center;
     list-style: none;
     margin: 2rem 0;
+    font-size: 4rem;
 }
 
-footer ul#socials li a{
+ul#socials li a{
     color: #3d827f;
     text-decoration: none;
-    font-size: 1.5rem;
     transition: all 0.3s ease-in-out;
     padding: 5px 10px;
     border-radius: 5px;
 }
 
-footer ul#socials li a:hover,
-footer ul#socials li a:focus {
-    color: #fff; /* Colore verde tipo petrolio */
+ul#socials li a:hover,
+ul#socials li a:focus {
+    color: #fff;
     background-color: #3d827f;
 }
-
-/*put a black border on visited social links*/
-footer ul#socials li a:visited{
+ul#socials li a:visited{
     border: 10px solid #000;
 }
 
-footer ul#socials li{
+ul#socials li{
     margin: 0 1rem;
 }
 
