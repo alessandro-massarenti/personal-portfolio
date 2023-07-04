@@ -20,12 +20,19 @@ body{
     flex-direction: column;
 }
 
-h1{
+header h1{
     font-family: 'Caprasimo', cursive;
     font-size: 3rem;
     text-align: center;
     font-weight: 100;
-    margin: 2rem 0;
+    margin: 2rem 0 1rem 0;
+}
+
+header h2{
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 1rem 0;
+    border-bottom: solid 1px #ccc;
 }
 
 p{
@@ -55,8 +62,30 @@ a:hover, a:focus{
     text-decoration-color: #fff;
 }
 
-header h1{
+em{
+    font-weight: bold;
+}
+
+article ul.tecnologie{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 0;
+    list-style: none;
+    color: rebeccapurple;
+    font-weight: bold;
+}
+
+header h1.underlined{
     border-bottom: dotted 5px #3d827f;
+}
+
+header ul.linguaggi{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    font-weight: bold;
 }
 
 main{
