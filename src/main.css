@@ -83,6 +83,7 @@ header h1.underlined{
 header ul.linguaggi{
     display: flex;
     justify-content: space-between;
+    gap: 1rem;
     align-items: center;
     list-style: none;
     font-weight: bold;
