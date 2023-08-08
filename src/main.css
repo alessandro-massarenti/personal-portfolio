@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 
-html, body {
+html{
     height: 100%;
 }
 
@@ -18,6 +18,7 @@ body{
     padding: 0 25px 50px 25px;
     display: flex;
     flex-direction: column;
+    box-shadow: 0 -0.5rem 3rem #3d827f59;
 }
 
 header h1{
@@ -87,6 +88,12 @@ header ul.linguaggi{
     align-items: center;
     list-style: none;
     font-weight: bold;
+
+    border-radius: 15px;
+    padding: 25px;
+    background-color: white;
+    box-shadow: 0 2rem 3rem #e0d7d6;
+    display: flex;
 }
 
 main{
@@ -134,14 +141,22 @@ ul#socials{
     list-style: none;
     margin: 2rem 0;
     font-size: 4rem;
+    gap: 1rem;
+}
+
+ul#socials a{
+    border-radius: 15px;
+    padding: 25px;
+    background-color: white;
+    box-shadow: inset 0 -0.5rem 3rem #3d827f59;
+    display: flex;
+    flex-direction: column;
 }
 
 ul#socials li a{
     color: #3d827f;
     text-decoration: none;
     transition: all 0.3s ease-in-out;
-    padding: 5px 10px;
-    border-radius: 5px;
 }
 
 ul#socials li a:visited{
@@ -152,8 +167,4 @@ ul#socials li a:hover,
 ul#socials li a:focus {
     color: #fff;
     background-color: #3d827f;
-}
-
-ul#socials li{
-    margin: 0 1rem;
 }
